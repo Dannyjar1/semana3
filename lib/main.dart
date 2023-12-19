@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     var vehiculo1 = Vehiculo.desdeMotor('Carro', 'Motor V6');
     var vehiculo2 = Vehiculo.conCapacidad('Trailer', 5000);
 
-    // Ejemplo de uso del constructor de fábrica de la clase ConexionDB (singleton)
+    // Ejemplo de uso del constructor de fábrica de la clase ConexionDB 
     var conexion1 = ConexionDB();
     conexion1.establecerNombre('MiBaseDeDatos1');
     var conexion2 = ConexionDB(); // Se obtiene la misma instancia creada anteriormente
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Instancias de Vehículos'),
+          title: const Text('Instancias de Vehículos'),//Instancias de Vehículos
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
